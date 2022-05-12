@@ -1,0 +1,38 @@
+li{
+  list-style: none;
+}
+
+#title{
+  padding-top: 100px;
+  padding-left:300px;
+}
+
+#title1{
+  font-family: 'GowunBatang-Regular';
+  text-decoration-line:underline;
+  text-decoration-color:#da6c63;
+  font-size: 30px;
+}
+
+#title2{
+  font-family: 'GowunBatang-Regular';
+  font-size: 18px;
+}
+
+#test_test{
+  display: flex;
+  //width:100%;
+  //text-align: center;
+  align-items:center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.dog{
+
+  margin-right: 40px;
+}
+
+.cat{
+  margin-left: 40px;
+}
