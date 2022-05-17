@@ -1,0 +1,10 @@
+#banner{
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.inner-list {
+  display: flex;
+  transition: .3s ease-out;
+  height: 90%;
+}
