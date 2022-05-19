@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <meta charset="utf-8">
+    <title>유기동물 입양</title>
+    <link rel="shortcut icon" href="images/icon1.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/icon1.ico" />
+
+    <script src="main.js" defer></script>
+    <script src="login.js" defer></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav class="main_list">
+      <div id="logo">
+        <a href="index.html"><img src="images/logo.png" alt="" width=50></a>
+        <a href=""></a>
+      </div>
+
+
+      <ul id="list_ul">
+        <li class="list_menu"><a href="">보호동물</a></li>
+        <li class="list_menu"><a href="where.html">보호소</a></li>
+        <li class="list_menu"><a href="">정보</a></li>
+        <li class="list_menu"><a href="">사진으로 검색</a></li>
+      </ul>
+
+      <ul id="list_ul2">
+        <li class="list_login"><a href="">로그인</a></li>
+      </ul>
+
+      <a href="#" class="main_list_toogleBtn">
+        <img src="images/menu.png" alt="" width=30>
+      </a>
+    </nav>
+
+
+    <section class="login-form">
+      <h1>LOGO DESIGN</h1>
+      <form action="">
+        <div class="int-area">
+          <input type="text" name="id" id="id" autocomplete="off" required>
+          <label for="id">USER NAME</label>
+        </div>
+        <div class="int-area">
+          <input type="password" name="pw" id="pw" autocomplete="off" required>
+          <label for="id">USER NAME</label>
+        </div>
+        <div class="btn-area">
+          <button type="submit">LOGIN</button>
+        </div>
+      </form>
+      <div class="caption">
+        <a href="">Forgot Password?</a>
+      </div>
+    </section>
+
+    <script>
+      let id=$('#id');
+      let pw=$('#pw');
+      let btn=$('#btn');
+
+      $(btn).on('click', function(){
+        if($(id).val() == ""){
+          $(id).next('label').addClass('warning');
+          setTimeout(function(){
+            $('label').removeClass('warning');
+          },1500);
+        }
+        else if($(pw).val() == ""){
+          $(pw).next('label').addClass('warning');
+        }
+      });
+    </script>
+  </body>
+</html>

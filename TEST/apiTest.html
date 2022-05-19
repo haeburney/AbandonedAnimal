@@ -2,9 +2,30 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>api연습</title>
+    <title>api</title>
+
+    <style>
+      body{background-image: url("css/loginBg.png");}
+    </style>
+
   </head>
   <body>
-    <h1>내 사이트임 ㅎㅇ</h1>
+    <h1>api</h1>
+    <p></p>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+     $.ajax({
+       method: "GET",
+       url: "http://openapi.animal.go.kr:80/openapi/service/rest/abandonmentPublicSrvc?_wadl&type=xml",
+
+       data: {serviceKey:"7LL6m%2F9hLy1EGblVbDDPEBNdFCl6m9Ft%2Fmw2b5wuTaAq2IuINWejMUw46typtDua4NacB9UfALipcKcnoK4PJw%3D%3D",bgnde:20220501,endde:20220518 },
+       headers:{Authorization: "7LL6m%2F9hLy1EGblVbDDPEBNdFCl6m9Ft%2Fmw2b5wuTaAq2IuINWejMUw46typtDua4NacB9UfALipcKcnoK4PJw%3D%3D"}
+     })
+      .done(function( msg ) {
+        console.log(msg);
+
+      });
+    </script>
   </body>
 </html>

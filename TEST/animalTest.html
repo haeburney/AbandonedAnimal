@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>테스트</title>
+  </head>
+  <body>
+    <p id="data"></p>
+    <script>
+      const url="http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic";
+      fetch(url)
+        .then((res)=>res.json())
+        .then((myJson)=>{
+          document.getElementById("data").innerText=JSON.stringify(
+            myJson,
+            null,
+            1
+          );
+        })
+
+
+    </script>
+  </body>
+</html>

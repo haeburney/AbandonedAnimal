@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+      var url = 'http://openapi.animal.go.kr/openapi/service/rest/abandonmentPublicSrvc/sido'; /*URL*/
+      var queryParams = '?' + encodeURIComponent('serviceKey') + '='+'7LL6m%2F9hLy1EGblVbDDPEBNdFCl6m9Ft%2Fmw2b5wuTaAq2IuINWejMUw46typtDua4NacB9UfALipcKcnoK4PJw%3D%3D'; /*Service Key*/
+      xhr.open('GET', url + queryParams);
+      xhr.onreadystatechange = function () {
+          if (this.readyState == 4) {
+              alert('Status: '+this.status+'nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'nBody: '+this.responseText);
+          }
+      };
+
+xhr.send('');
+    </script>
+  </body>
+</html>
