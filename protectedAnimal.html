@@ -1,0 +1,16 @@
+% extends 'base.html' %
+% block content %
+
+% if covidList %
+    % for data in covidList %
+
+        skdl : {{data.age}} <br>
+
+
+
+    {% endfor %
+
+% endif %
+
+
+% endblock %
