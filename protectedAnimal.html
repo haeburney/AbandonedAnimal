@@ -1,16 +1,270 @@
-% extends 'base.html' %
-% block content %
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/protectedAnimal.css">
+    <meta charset="utf-8">
+    <title>유기동물 입양</title>
+    <link rel="shortcut icon" href="images/icon1.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/icon1.ico" />
 
-% if covidList %
-    % for data in covidList %
+    <script src="main.js" defer></script>
 
-        skdl : {{data.age}} <br>
+  </head>
+  <body>
+    <nav class="main_list">
+      <div id="logo">
+        <a href="index.html"><img src="images/logo.png" alt="" width=50></a>
+        <a href=""></a>
+      </div>
 
 
+      <ul id="list_ul">
+        <li class="list_menu"><a href="protectedAnimal.html">보호동물</a></li>
+        <li class="list_menu"><a href="where.html">보호소</a></li>
+        <li class="list_menu"><a href="info.html">정보</a></li>
+        <li class="list_menu"><a href="SearchImage.html">사진으로 검색</a></li>
+      </ul>
 
-    {% endfor %
+      <ul id="list_ul2">
+        <li class="list_login"><a href="login.html">로그인</a></li>
+      </ul>
 
-% endif %
+      <a href="#" class="main_list_toogleBtn">
+        <img src="images/menu.png" alt="" width=30>
+      </a>
+    </nav>
+
+    <div id="protected">
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206081306394_s.jpg" alt="" width=200><br>
+      나이: "2018(년생)"<br>
+      보호소 : "사천시 동물보호센터"<br>
+      전화번호: "055-831-3768"<br>
+      kindCd :  "[개] 말티즈"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "심장사상충양성  새로운 가족을 찾는 순하고 사람을 잘 따르는 착한 멍멍이♡ "<br>
+      몸무게 : "5(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206081406948_s.jpg" alt="" width=200><br>
+      나이: "2019(년생)"<br>
+      보호소 : "반려동물보호센터"<br>
+      전화번호: "043-201-2298"<br>
+      kindCd :  "[개] 믹스견"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "겁이 많은 친구"<br>
+      몸무게 : "5.7(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206081406855_s.jpg" alt="" width=200><br>
+      나이: "2019(년생)"<br>
+      보호소 : "반려동물보호센터"<br>
+      전화번호: "043-201-2298"<br>
+      kindCd :  "[개] 믹스견"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "겁이 많음  체구가 작고 치와와를 닮은 아이"<br>
+      몸무게 : "4.3(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206081406400_s.jpg" alt="" width=200><br>
+      나이: "2019(년생)"<br>
+      보호소 : "반려동물보호센터"<br>
+      전화번호: "043-201-2298"<br>
+      kindCd :  "[개] 믹스견"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "단모  통통함  겁이 조금 있으나 순함"<br>
+      몸무게 : "8(Kg)"<br><br><br><br><br>
 
 
-% endblock %
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206081406838_s.jpg" alt="" width=200><br>
+      나이: "2009(년생)"<br>
+      보호소 : "반려동물보호센터"<br>
+      전화번호: "043-201-2298"<br>
+      kindCd :  "[개] 믹스견"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "노령  백탁  시츄+푸들 믹스 추정  꼬불털  겁이 조금있으나 순함"<br>
+      몸무게 : "5.8(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/04/202206081606904_s.jpg" alt="" width=200><br>
+      나이: "2008(년생)"<br>
+      보호소 : "수원시 동물보호센터"<br>
+      전화번호: "031-228-3557"<br>
+      kindCd :  "[개] 말티즈"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "하네스 착용  내장칩 있음"<br>
+      몸무게 : "3.5(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/04/202206081606149_s.jpg" alt="" width=200><br>
+      나이: "2017(년생)"<br>
+      보호소 : "수원시 동물보호센터"<br>
+      전화번호: "031-228-3557"<br>
+      kindCd :  "[개] 푸들"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "　"<br>
+      몸무게 : "4.1(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206081606202_s.jpg" alt="" width=200><br>
+      나이: "2008(년생)"<br>
+      보호소 : "광주 동물보호소"<br>
+      전화번호: "062-571-2808"<br>
+      kindCd :  "[개] 시츄"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "22-0586 일남"<br>
+      몸무게 : "7(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/04/202206081106476_s.jpg" alt="" width=200><br>
+      나이: "2021(년생)"<br>
+      보호소 : "허동물병원"<br>
+      전화번호: "053-752-7535"<br>
+      kindCd :  "[개] 푸들"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "순하고  자가미용한지 얼마안됨"<br>
+      몸무게 : "3.6(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206081106909_s.jpg" alt="" width=200><br>
+      나이: "2018(년생)"<br>
+      보호소 : "제주 동물보호센터"<br>
+      전화번호: "064-710-4065"<br>
+      kindCd :  "[고양이] 한국 고양이"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "개체관리번호 22263 - 후지파행/경계심"<br>
+      몸무게 : "4.7(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206081006577_s.jpg" alt="" width=200><br>
+      나이: "2020(년생)"<br>
+      보호소 : "아산시동물보호센터"<br>
+      전화번호: "041-533-3563"<br>
+      kindCd :  "[개] 비숑 프리제"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220617"<br>
+      성 : "F"<br>
+      특징 : "924호(관리) 426호(공고) 입질 있음"<br>
+      몸무게 : "5(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/04/202206080806955_s.jpg" alt="" width=200><br>
+      나이: "2020(년생)"<br>
+      보호소 : "대전동물보호센터"<br>
+      전화번호: "042-825-1118"<br>
+      kindCd :  "[개] 푸들"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "목태？미용"<br>
+      몸무게 : "4(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206071706323_s.jpg" alt="" width=200><br>
+      나이: "2021(년생)"<br>
+      보호소 : "경동동물병원"<br>
+      전화번호: "032-765-9988"<br>
+      kindCd :  "[개] 믹스견"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "빨간몸줄착용하고있고 불안해서인지 계속 짖어댐"<br>
+      몸무게 : "4.00(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/04/202206071306867_s.jpg" alt="" width=200><br>
+      나이: "2022(년생)"<br>
+      보호소 : "신공항동물병원"<br>
+      전화번호: "032-751-4598"<br>
+      kindCd :  "[개] 믹스견"<br>
+      공고시작일 :  "20220608"<br>
+      공고종료일 : "20220620"<br>
+      성 : "M"<br>
+      특징 : "2마리 같이 구조  매우 순함."<br>
+      몸무게 : "6.32(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/04/202206072206163_s.jpg" alt="" width=200><br>
+      나이: "2018(년생)"<br>
+      보호소 : "경산시유기동물보호소"<br>
+      전화번호: "010-2536-0955"<br>
+      kindCd :  "[개] 말티즈"<br>
+      공고시작일 :  "20220607"<br>
+      공고종료일 : "20220617"<br>
+      성 : "M"<br>
+      특징 : "인근 원룸에서 구조"<br>
+      몸무게 : "4.3(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/04/202206072206892_s.jpg" alt="" width=200><br>
+      나이: "2016(년생)"<br>
+      보호소 : "경산시유기동물보호소"<br>
+      전화번호: "010-2536-0955"<br>
+      kindCd :  "[개] 말티즈"<br>
+      공고시작일 :  "20220607"<br>
+      공고종료일 : "20220617"<br>
+      성 : "M"<br>
+      특징 : "인근 원룸에서 구조"<br>
+      몸무게 : "5.28(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206071606864_s.jpg" alt="" width=200><br>
+      나이: "2020(년생)"<br>
+      보호소 : "영일동물플러스"<br>
+      전화번호: "054-262-8295"<br>
+      kindCd :  "[개] 프렌치 불독"<br>
+      공고시작일 :  "20220607"<br>
+      공고종료일 : "20220617"<br>
+      성 : "M"<br>
+      특징 : "내장칩없음 잘관리된듯 매우 깨끗함 경계1도없고 애교많고 사람 너무 좋아함 생각보다 통통한몸"<br>
+      몸무게 : "13(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206071406123_s.jpg" alt="" width=200><br>
+      나이: "2019(년생)"<br>
+      보호소 : "유실유기동물보호소"<br>
+      전화번호: "010-5913-5119"<br>
+      kindCd :  "[고양이] 레그돌"<br>
+      공고시작일 :  "20220607"<br>
+      공고종료일 : "20220617"<br>
+      성 : "M"<br>
+      특징 : "귀에점 많음"<br>
+      몸무게 : "4(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/04/202206071506676_s.jpg" alt="" width=200><br>
+      나이: "2022(년생)"<br>
+      보호소 : "로뎀동물병원"<br>
+      전화번호: "031-952-7576"<br>
+      kindCd :  "[개] 믹스견"<br>
+      공고시작일 :  "20220607"<br>
+      공고종료일 : "20220617"<br>
+      성 : "M"<br>
+      특징 : "하늘색 목줄을 하고 있고  미용을 최근에 한듯.. 사람을 잘 따르고 착함"<br>
+      몸무게 : "11(Kg)"<br><br><br><br><br>
+
+      <img src="http://www.animal.go.kr/files/shelter/2022/05/202206071106541_s.jpg" alt="" width=200><br>
+      나이: "2022(년생)"<br>
+      보호소 : "인천광역시수의사회"<br>
+      전화번호: "032-515-7567"<br>
+      kindCd :  "[개] 믹스견"<br>
+      공고시작일 :  "20220607"<br>
+      공고종료일 : "20220617"<br>
+      성 : "M"<br>
+      특징 : "7개월추정  유치빠짐"<br>
+      몸무게 : "10(Kg)"<br><br><br><br><br>
+    </div>
+
+
+    <div id="page">
+      <a href=""> 1  2  3  4  5  </a>
+
+    </div>
+
+    <script src="sample_all.js"></script>
+  </body>
+</html>
