@@ -21,8 +21,8 @@ li{
 
 #test_test{
   display: flex;
-  //width:100%;
-  //text-align: center;
+  /*width:100%;
+  //text-align: center;*/
   align-items:center;
   justify-content: center;
   margin-top: 100px;
